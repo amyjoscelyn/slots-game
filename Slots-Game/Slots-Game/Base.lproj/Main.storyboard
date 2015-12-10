@@ -377,100 +377,117 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9rl-gc-yhO">
-                                <rect key="frame" x="0.0" y="43" width="320" height="162"/>
-                                <animations/>
-                            </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nx-YV-KDl">
-                                <rect key="frame" x="52" y="251" width="216" height="103"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.97254901959999995" green="0.78823529410000004" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="SPIN">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="6"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="spin:" destination="wTF-g0-3JX" eventType="touchUpInside" id="HuZ-e7-UaR"/>
-                                </connections>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="WUg-Bj-8PB">
-                                <rect key="frame" x="75" y="375" width="163" height="130"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3Z1-MQ-Z89">
+                                <rect key="frame" x="0.0" y="45" width="600" height="510"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Your Tickets: %li" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIq-F3-SBG">
-                                        <rect key="frame" x="0.0" y="0.0" width="163" height="21"/>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9rl-gc-yhO">
+                                        <rect key="frame" x="140" y="0.0" width="320" height="216"/>
                                         <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.090196078430000007" green="0.2666666667" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Your Winnings: %li" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZr-2s-ngz">
-                                        <rect key="frame" x="0.0" y="37" width="163" height="21"/>
+                                    </pickerView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="pxR-mq-9T3">
+                                        <rect key="frame" x="140" y="230" width="320" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1k-0k-72x">
+                                                <rect key="frame" x="0.0" y="0.0" width="107" height="30"/>
+                                                <animations/>
+                                                <state key="normal" title="⚪️"/>
+                                                <connections>
+                                                    <action selector="componentOneButtonTapped:" destination="wTF-g0-3JX" eventType="touchUpInside" id="vTx-E9-kwr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKR-8w-jgD">
+                                                <rect key="frame" x="107" y="0.0" width="107" height="30"/>
+                                                <animations/>
+                                                <state key="normal" title="⚪️"/>
+                                                <connections>
+                                                    <action selector="componentTwoButtonTapped:" destination="wTF-g0-3JX" eventType="touchUpInside" id="nhP-bY-naC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHf-7S-Piw">
+                                                <rect key="frame" x="214" y="0.0" width="107" height="30"/>
+                                                <animations/>
+                                                <state key="normal" title="⚪️"/>
+                                                <connections>
+                                                    <action selector="componentThreeButtonTapped:" destination="wTF-g0-3JX" eventType="touchUpInside" id="gQD-cV-yVh"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.090196078430000007" green="0.2666666667" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Two in a Row!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AyJ-z8-yc6">
-                                        <rect key="frame" x="0.0" y="73" width="163" height="21"/>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nx-YV-KDl">
+                                        <rect key="frame" x="219" y="274" width="163" height="48"/>
                                         <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="You Won %lu Tickets!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XbW-Ha-ThW">
-                                        <rect key="frame" x="0.0" y="110" width="163" height="21"/>
+                                        <color key="backgroundColor" red="0.97254901959999995" green="0.78823529410000004" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="SPIN">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="6"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="spin:" destination="wTF-g0-3JX" eventType="touchUpInside" id="HuZ-e7-UaR"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="WUg-Bj-8PB">
+                                        <rect key="frame" x="219" y="336" width="163" height="130"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Tickets: %li" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIq-F3-SBG">
+                                                <rect key="frame" x="0.0" y="0.0" width="163" height="21"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.090196078430000007" green="0.2666666667" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Winnings: %li" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZr-2s-ngz">
+                                                <rect key="frame" x="0.0" y="37" width="163" height="21"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.090196078430000007" green="0.2666666667" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Two in a Row!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AyJ-z8-yc6">
+                                                <rect key="frame" x="0.0" y="73" width="163" height="21"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Won %lu Tickets!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XbW-Ha-ThW">
+                                                <rect key="frame" x="0.0" y="110" width="163" height="21"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9r-YX-YVN">
+                                        <rect key="frame" x="234" y="480" width="132" height="30"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.88235294119999996" green="0.37254901959999998" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="       CASH OUT       ">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="6"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="cashOutButtonTapped:" destination="wTF-g0-3JX" eventType="touchUpInside" id="aTf-tX-Pbd"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstItem="1nx-YV-KDl" firstAttribute="width" secondItem="WUg-Bj-8PB" secondAttribute="width" id="Yvp-zH-f5H"/>
+                                    <constraint firstItem="pxR-mq-9T3" firstAttribute="width" secondItem="9rl-gc-yhO" secondAttribute="width" id="nhE-LM-jpB"/>
+                                    <constraint firstItem="pxR-mq-9T3" firstAttribute="centerX" secondItem="9rl-gc-yhO" secondAttribute="centerX" id="yVS-vp-Yhs"/>
+                                </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1k-0k-72x">
-                                <rect key="frame" x="25" y="210" width="70" height="35"/>
-                                <animations/>
-                                <state key="normal" title="⚪️"/>
-                                <connections>
-                                    <action selector="componentOneButtonTapped:" destination="wTF-g0-3JX" eventType="touchUpInside" id="vTx-E9-kwr"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKR-8w-jgD">
-                                <rect key="frame" x="137" y="213" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" title="⚪️"/>
-                                <connections>
-                                    <action selector="componentTwoButtonTapped:" destination="wTF-g0-3JX" eventType="touchUpInside" id="nhP-bY-naC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHf-7S-Piw">
-                                <rect key="frame" x="247" y="213" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" title="⚪️"/>
-                                <connections>
-                                    <action selector="componentThreeButtonTapped:" destination="wTF-g0-3JX" eventType="touchUpInside" id="gQD-cV-yVh"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9r-YX-YVN">
-                                <rect key="frame" x="94" y="525" width="132" height="30"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.88235294119999996" green="0.37254901959999998" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="       CASH OUT       ">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="6"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="cashOutButtonTapped:" destination="wTF-g0-3JX" eventType="touchUpInside" id="aTf-tX-Pbd"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIH-QH-kXl">
-                                <rect key="frame" x="262" y="525" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIH-QH-kXl">
+                                <rect key="frame" x="505" y="525" width="30" height="30"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.97254901959999995" green="0.78823529410000004" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="🍒"/>
@@ -484,6 +501,14 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="3Z1-MQ-Z89" firstAttribute="height" secondItem="J5J-Dj-6UV" secondAttribute="height" multiplier="0.85" id="2OJ-tl-62V"/>
+                            <constraint firstItem="3Z1-MQ-Z89" firstAttribute="centerX" secondItem="J5J-Dj-6UV" secondAttribute="centerX" id="BEF-Cl-LqO"/>
+                            <constraint firstItem="NiQ-sm-nz5" firstAttribute="top" secondItem="FIH-QH-kXl" secondAttribute="bottom" constant="45" id="BT3-mO-fnH"/>
+                            <constraint firstItem="3Z1-MQ-Z89" firstAttribute="centerY" secondItem="J5J-Dj-6UV" secondAttribute="centerY" id="CsG-fe-2bA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FIH-QH-kXl" secondAttribute="trailing" constant="45" id="qg6-QI-hIE"/>
+                            <constraint firstItem="3Z1-MQ-Z89" firstAttribute="width" secondItem="J5J-Dj-6UV" secondAttribute="width" id="sFe-Ni-TZb"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mfM-02-6gC"/>
                     <connections>
