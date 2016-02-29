@@ -513,6 +513,7 @@
 				3D20FDF11C19E4E200E43043 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D20FDF21C19E4E200E43043 /* Build configuration list for PBXNativeTarget "Slots-GameTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +522,7 @@
 				3D20FDF41C19E4E200E43043 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D20FDF51C19E4E200E43043 /* Build configuration list for PBXNativeTarget "Slots-GameUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +531,7 @@
 				3D20FDF71C19E4E200E43043 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
