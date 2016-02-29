@@ -11,6 +11,7 @@
 @interface AMYSlotsGameViewController ()
 
 - (IBAction)spin:(id)sender;
+
 @property (weak, nonatomic) IBOutlet UILabel *currentTicketAmount;
 @property (weak, nonatomic) IBOutlet UILabel *totalTicketWinnings;
 @property (weak, nonatomic) IBOutlet UIButton *componentOneButton;
@@ -19,11 +20,13 @@
 @property (weak, nonatomic) IBOutlet UILabel *notificationOneLabel;
 @property (weak, nonatomic) IBOutlet UILabel *notificationTwoLabel;
 
+@property (weak, nonatomic) IBOutlet UIButton *rulesAndRanksButton;
+
 @property (nonatomic) NSInteger amountOfTicketsWon;
+@property (nonatomic) BOOL justWon;
 @property (nonatomic) BOOL componentOneHeld;
 @property (nonatomic) BOOL componentTwoHeld;
 @property (nonatomic) BOOL componentThreeHeld;
-@property (nonatomic) BOOL justWon;
 @property (nonatomic) NSUInteger rowOne;
 @property (nonatomic) NSUInteger rowTwo;
 @property (nonatomic) NSUInteger rowThree;
@@ -32,8 +35,10 @@
 
 @implementation AMYSlotsGameViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
+    
     self.fruitsArray = @[@"🍎", @"🍊", @"🍌", @"🍉", @"🍒", @"🍇", @"🍒", @"💎", @"🍇", @"🍉", @"🍒", @"🍆", @"🍎", @"🍊", @"🍌", @"🍀", @"🍇", @"🍒", @"🍎", @"🍉", @"🍌", @"🍇", @"🍆", @"🍎", @"🍊", @"🍇", @"🍉", @"🍌", @"🍒", @"🍇", @"🍒", @"🍌", @"🍉", @"🍆", @"🍀", @"🍊", @"🍇", @"🍌", @"🍉", @"🍇", @"🍒", @"🍎", @"🍉", @"🍌", @"🍆", @"🍒", @"🍊", @"🍇", @"🍒", @"🍌", @"🍎", @"🍒"];
     
     self.fruitPicker.dataSource = self;
@@ -45,7 +50,9 @@
     self.tickets = 100;
     self.currentTicketAmount.text = [NSString stringWithFormat:@"Your Tickets: %li", self.tickets];
     self.totalTicketWinnings.text = @"Total Tickets Won: 0";
-    //it would be nice to have a way to prevent matches right at the beginning of the game, although it's just a single freebie, which isn't a big deal.  they can't hold those right after because they'll have just won
+    
+    self.rulesAndRanksButton.layer.cornerRadius = self.rulesAndRanksButton.frame.size.height/2;
+    
     for (NSUInteger i = 0; i < self.fruitPicker.numberOfComponents; i++)
     {
         NSUInteger randomRow = arc4random_uniform((int)self.fruitsArray.count);
@@ -77,7 +84,7 @@ numberOfRowsInComponent:(NSInteger)component
     [self playerHasEnoughTickets];
 }
 
-- (void)playerHasEnoughTickets //this method and the one below should be cleaned up and adjusted. it's not running optimally.
+- (void)playerHasEnoughTickets
 {
     BOOL playerHasEnoughTickets = YES;
     
@@ -108,7 +115,6 @@ numberOfRowsInComponent:(NSInteger)component
         self.componentOneHeld = NO;
         self.componentTwoHeld = NO;
         self.componentThreeHeld = NO;
-        //although if you try to hold only one slot and go from there, it doesn't work because it thinks you don't have enough tickets even if you do
         
         self.notificationOneLabel.text = @"Sorry";
         self.notificationTwoLabel.text = @"Not enough tickets.";
@@ -323,6 +329,7 @@ numberOfRowsInComponent:(NSInteger)component
         
         return;
     }
+    
     if (self.componentOneHeld)
     {
         self.componentOneHeld = NO;
@@ -386,11 +393,6 @@ numberOfRowsInComponent:(NSInteger)component
 - (IBAction)cashOutButtonTapped:(id)sender
 {
     [self.delegate AMYSlotsGameViewController:self didCashOut:self.tickets];
-    //This works perfectly.  The only thing is your ticket amount is not sustained between games.  As soon as you go into the modal, the menu view is wiped clean.  I believe having a dataStore would solve this.  Also if I were to hook it up to my carnival game and a datastore there, it should work fine.
 }
-
-//I would like to have a modal view for you to see the rankings/rules.  They're on the first page, but you should be able to refer to them whenever without having to cash out.
-
-//I wonder how much of this should go in a separate dataStore class?  Or just a slotsGame class?  This controller should really just be for hooking things up.  But that's tough, considering it's a picker view, and not just a static view.  Ticket amount would go in, for one, but that would be for the player's dataStore class.  The game rules might need to go into a separate class, although it's fine as it is with what I have already.
 
 @end

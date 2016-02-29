@@ -17,9 +17,10 @@
 
 @interface AMYSlotsGameViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 
-@property (strong, nonatomic) NSArray *fruitsArray;
 @property (strong, nonatomic) IBOutlet UIPickerView *fruitPicker;
 @property (strong, nonatomic) IBOutlet UIButton *spinButton;
+
+@property (strong, nonatomic) NSArray *fruitsArray;
 @property (nonatomic) NSInteger tickets;
 
 @property (weak, nonatomic) id<AMYSlotsGameViewControllerDelegate> delegate;

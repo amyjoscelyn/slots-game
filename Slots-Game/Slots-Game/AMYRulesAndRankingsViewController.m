@@ -10,6 +10,8 @@
 
 @interface AMYRulesAndRankingsViewController ()
 
+@property (weak, nonatomic) IBOutlet UIButton *backButton;
+
 @end
 
 @implementation AMYRulesAndRankingsViewController
@@ -17,6 +19,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.backButton.layer.cornerRadius = self.backButton.frame.size.height/2;
 }
 
 - (IBAction)backButtonTapped:(id)sender
