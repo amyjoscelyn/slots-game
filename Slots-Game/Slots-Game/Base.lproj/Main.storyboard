@@ -412,6 +412,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
+                                        <color key="backgroundColor" red="0.047058823530000002" green="0.37647058820000001" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9r-YX-YVN">
                                         <rect key="frame" x="195" y="471" width="210" height="57"/>
