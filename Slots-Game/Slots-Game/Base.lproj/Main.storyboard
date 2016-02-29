@@ -600,7 +600,7 @@
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxF-XX-SeX">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxF-XX-SeX">
                                                         <rect key="frame" x="132" y="0.0" width="132" height="30"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                         <color key="textColor" red="0.88235294119999996" green="0.37254901959999998" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -750,7 +750,7 @@
                                         <color key="textColor" red="0.090196078430000007" green="0.2666666667" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hold a column (⚪️) to save its position." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMv-vO-eTd">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hold a column (⚪️) to save its position." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMv-vO-eTd">
                                         <rect key="frame" x="143" y="46" width="315" height="46"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" red="0.090196078430000007" green="0.2666666667" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
@@ -814,24 +814,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cdw-wZ-IwB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2060" y="-368"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="eue-7g-Lwc">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wz9-5S-hui" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gqa-7O-cRf">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Vn5-yv-tTL" kind="relationship" relationship="rootViewController" id="dxC-9Z-VIf"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LJC-uu-fPV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="496" y="327"/>
         </scene>
     </scenes>
 </document>

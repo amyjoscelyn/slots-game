@@ -395,4 +395,17 @@ numberOfRowsInComponent:(NSInteger)component
     [self.delegate AMYSlotsGameViewController:self didCashOut:self.tickets];
 }
 
+/*
+ Spin the Fruit! (title)
+ Spin to win tickets!
+ 
+ Tickets are on the line as you spin to match emoji fruit. Win big when you get two in a row, and tenfold with three in a row! The more rare the fruit, the better the prize; the elusive lucky clover and diamond yield the highest ticket amounts.
+ 
+ Play offline!
+ 
+ No actual money involved.
+ 
+ Inspired by a lab from the Flatiron School.
+ */
+
 @end
