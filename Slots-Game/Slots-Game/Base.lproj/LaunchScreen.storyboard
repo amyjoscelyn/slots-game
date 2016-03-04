@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,16 +19,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch2" translatesAutoresizingMaskIntoConstraints="NO" id="kqg-Ez-MJo">
-                                <rect key="frame" x="160" y="188" width="280" height="224"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchIcon" translatesAutoresizingMaskIntoConstraints="NO" id="kqg-Ez-MJo">
+                                <rect key="frame" x="100" y="100" width="400" height="400"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="kqg-Ez-MJo" secondAttribute="height" multiplier="5:4" id="cHp-i9-qYE"/>
+                                    <constraint firstAttribute="width" secondItem="kqg-Ez-MJo" secondAttribute="height" multiplier="1:1" id="cHp-i9-qYE"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="kqg-Ez-MJo" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="280:600" id="37M-YS-KQh"/>
+                            <constraint firstItem="kqg-Ez-MJo" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="2/3" id="4Ir-Fe-ZSo"/>
                             <constraint firstItem="kqg-Ez-MJo" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="6H8-RY-6Is"/>
                             <constraint firstItem="kqg-Ez-MJo" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="QwU-NC-Fnc"/>
                         </constraints>
@@ -39,6 +40,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Launch2" width="310" height="255"/>
+        <image name="LaunchIcon" width="512" height="512"/>
     </resources>
 </document>
