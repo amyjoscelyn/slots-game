@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D20FDC71C19E4E200E43043 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D20FDC61C19E4E200E43043 /* main.m */; };
+		3D20FDCA1C19E4E200E43043 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D20FDC91C19E4E200E43043 /* AppDelegate.m */; };
+		3D20FDD01C19E4E200E43043 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D20FDCE1C19E4E200E43043 /* Main.storyboard */; };
+		3D20FDD21C19E4E200E43043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D20FDD11C19E4E200E43043 /* Assets.xcassets */; };
+		3D20FDD51C19E4E200E43043 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D20FDD31C19E4E200E43043 /* LaunchScreen.storyboard */; };
+		3D20FDE01C19E4E200E43043 /* Slots_GameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D20FDDF1C19E4E200E43043 /* Slots_GameTests.m */; };
+		3D20FDEB1C19E4E200E43043 /* Slots_GameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D20FDEA1C19E4E200E43043 /* Slots_GameUITests.m */; };
+		3D20FDFA1C19E54200E43043 /* AMYRulesAndRankingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D20FDF91C19E54200E43043 /* AMYRulesAndRankingsViewController.m */; };
+		3D20FDFD1C19E61000E43043 /* AMYMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D20FDFC1C19E61000E43043 /* AMYMainMenuViewController.m */; };
+		3D20FE001C19E66C00E43043 /* AMYSlotsGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D20FDFF1C19E66C00E43043 /* AMYSlotsGameViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D20FDDC1C19E4E200E43043 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D20FDBA1C19E4E200E43043 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D20FDC11C19E4E200E43043;
+			remoteInfo = "Slots-Game";
+		};
+		3D20FDE71C19E4E200E43043 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D20FDBA1C19E4E200E43043 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D20FDC11C19E4E200E43043;
+			remoteInfo = "Slots-Game";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D20FDC21C19E4E200E43043 /* Spin the Fruit!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spin the Fruit!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D20FDC61C19E4E200E43043 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3D20FDC81C19E4E200E43043 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3D20FDC91C19E4E200E43043 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3D20FDCF1C19E4E200E43043 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D20FDD11C19E4E200E43043 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D20FDD41C19E4E200E43043 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D20FDD61C19E4E200E43043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D20FDDB1C19E4E200E43043 /* Spin the Fruit!.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Spin the Fruit!.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D20FDDF1C19E4E200E43043 /* Slots_GameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Slots_GameTests.m; sourceTree = "<group>"; };
+		3D20FDE11C19E4E200E43043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D20FDE61C19E4E200E43043 /* Spin the Fruit!.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Spin the Fruit!.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D20FDEA1C19E4E200E43043 /* Slots_GameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Slots_GameUITests.m; sourceTree = "<group>"; };
+		3D20FDEC1C19E4E200E43043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D20FDF81C19E54200E43043 /* AMYRulesAndRankingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMYRulesAndRankingsViewController.h; sourceTree = "<group>"; };
+		3D20FDF91C19E54200E43043 /* AMYRulesAndRankingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMYRulesAndRankingsViewController.m; sourceTree = "<group>"; };
+		3D20FDFB1C19E61000E43043 /* AMYMainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMYMainMenuViewController.h; sourceTree = "<group>"; };
+		3D20FDFC1C19E61000E43043 /* AMYMainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMYMainMenuViewController.m; sourceTree = "<group>"; };
+		3D20FDFE1C19E66C00E43043 /* AMYSlotsGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMYSlotsGameViewController.h; sourceTree = "<group>"; };
+		3D20FDFF1C19E66C00E43043 /* AMYSlotsGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMYSlotsGameViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D20FDBF1C19E4E200E43043 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D20FDD81C19E4E200E43043 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D20FDE31C19E4E200E43043 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D20FDB91C19E4E200E43043 = {
+			isa = PBXGroup;
+			children = (
+				3D20FDC41C19E4E200E43043 /* Slots-Game */,
+				3D20FDDE1C19E4E200E43043 /* Slots-GameTests */,
+				3D20FDE91C19E4E200E43043 /* Slots-GameUITests */,
+				3D20FDC31C19E4E200E43043 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D20FDC31C19E4E200E43043 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D20FDC21C19E4E200E43043 /* Spin the Fruit!.app */,
+				3D20FDDB1C19E4E200E43043 /* Spin the Fruit!.xctest */,
+				3D20FDE61C19E4E200E43043 /* Spin the Fruit!.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D20FDC41C19E4E200E43043 /* Slots-Game */ = {
+			isa = PBXGroup;
+			children = (
+				3D20FDC81C19E4E200E43043 /* AppDelegate.h */,
+				3D20FDC91C19E4E200E43043 /* AppDelegate.m */,
+				3D20FDCE1C19E4E200E43043 /* Main.storyboard */,
+				3D20FDF81C19E54200E43043 /* AMYRulesAndRankingsViewController.h */,
+				3D20FDF91C19E54200E43043 /* AMYRulesAndRankingsViewController.m */,
+				3D20FDFB1C19E61000E43043 /* AMYMainMenuViewController.h */,
+				3D20FDFC1C19E61000E43043 /* AMYMainMenuViewController.m */,
+				3D20FDFE1C19E66C00E43043 /* AMYSlotsGameViewController.h */,
+				3D20FDFF1C19E66C00E43043 /* AMYSlotsGameViewController.m */,
+				3D20FDD11C19E4E200E43043 /* Assets.xcassets */,
+				3D20FDD31C19E4E200E43043 /* LaunchScreen.storyboard */,
+				3D20FDD61C19E4E200E43043 /* Info.plist */,
+				3D20FDC51C19E4E200E43043 /* Supporting Files */,
+			);
+			path = "Slots-Game";
+			sourceTree = "<group>";
+		};
+		3D20FDC51C19E4E200E43043 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D20FDC61C19E4E200E43043 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D20FDDE1C19E4E200E43043 /* Slots-GameTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D20FDDF1C19E4E200E43043 /* Slots_GameTests.m */,
+				3D20FDE11C19E4E200E43043 /* Info.plist */,
+			);
+			path = "Slots-GameTests";
+			sourceTree = "<group>";
+		};
+		3D20FDE91C19E4E200E43043 /* Slots-GameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3D20FDEA1C19E4E200E43043 /* Slots_GameUITests.m */,
+				3D20FDEC1C19E4E200E43043 /* Info.plist */,
+			);
+			path = "Slots-GameUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D20FDC11C19E4E200E43043 /* Slots-Game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D20FDEF1C19E4E200E43043 /* Build configuration list for PBXNativeTarget "Slots-Game" */;
+			buildPhases = (
+				3D20FDBE1C19E4E200E43043 /* Sources */,
+				3D20FDBF1C19E4E200E43043 /* Frameworks */,
+				3D20FDC01C19E4E200E43043 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Slots-Game";
+			productName = "Slots-Game";
+			productReference = 3D20FDC21C19E4E200E43043 /* Spin the Fruit!.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D20FDDA1C19E4E200E43043 /* Slots-GameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D20FDF21C19E4E200E43043 /* Build configuration list for PBXNativeTarget "Slots-GameTests" */;
+			buildPhases = (
+				3D20FDD71C19E4E200E43043 /* Sources */,
+				3D20FDD81C19E4E200E43043 /* Frameworks */,
+				3D20FDD91C19E4E200E43043 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D20FDDD1C19E4E200E43043 /* PBXTargetDependency */,
+			);
+			name = "Slots-GameTests";
+			productName = "Slots-GameTests";
+			productReference = 3D20FDDB1C19E4E200E43043 /* Spin the Fruit!.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3D20FDE51C19E4E200E43043 /* Slots-GameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D20FDF51C19E4E200E43043 /* Build configuration list for PBXNativeTarget "Slots-GameUITests" */;
+			buildPhases = (
+				3D20FDE21C19E4E200E43043 /* Sources */,
+				3D20FDE31C19E4E200E43043 /* Frameworks */,
+				3D20FDE41C19E4E200E43043 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D20FDE81C19E4E200E43043 /* PBXTargetDependency */,
+			);
+			name = "Slots-GameUITests";
+			productName = "Slots-GameUITests";
+			productReference = 3D20FDE61C19E4E200E43043 /* Spin the Fruit!.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D20FDBA1C19E4E200E43043 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Amy Joscelyn";
+				TargetAttributes = {
+					3D20FDC11C19E4E200E43043 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = SYR2PUL4D4;
+					};
+					3D20FDDA1C19E4E200E43043 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = SYR2PUL4D4;
+						TestTargetID = 3D20FDC11C19E4E200E43043;
+					};
+					3D20FDE51C19E4E200E43043 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = SYR2PUL4D4;
+						TestTargetID = 3D20FDC11C19E4E200E43043;
+					};
+				};
+			};
+			buildConfigurationList = 3D20FDBD1C19E4E200E43043 /* Build configuration list for PBXProject "Spin the Fruit!" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D20FDB91C19E4E200E43043;
+			productRefGroup = 3D20FDC31C19E4E200E43043 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D20FDC11C19E4E200E43043 /* Slots-Game */,
+				3D20FDDA1C19E4E200E43043 /* Slots-GameTests */,
+				3D20FDE51C19E4E200E43043 /* Slots-GameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D20FDC01C19E4E200E43043 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D20FDD51C19E4E200E43043 /* LaunchScreen.storyboard in Resources */,
+				3D20FDD21C19E4E200E43043 /* Assets.xcassets in Resources */,
+				3D20FDD01C19E4E200E43043 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D20FDD91C19E4E200E43043 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D20FDE41C19E4E200E43043 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D20FDBE1C19E4E200E43043 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D20FDCA1C19E4E200E43043 /* AppDelegate.m in Sources */,
+				3D20FDC71C19E4E200E43043 /* main.m in Sources */,
+				3D20FDFD1C19E61000E43043 /* AMYMainMenuViewController.m in Sources */,
+				3D20FDFA1C19E54200E43043 /* AMYRulesAndRankingsViewController.m in Sources */,
+				3D20FE001C19E66C00E43043 /* AMYSlotsGameViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D20FDD71C19E4E200E43043 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D20FDE01C19E4E200E43043 /* Slots_GameTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D20FDE21C19E4E200E43043 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D20FDEB1C19E4E200E43043 /* Slots_GameUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D20FDDD1C19E4E200E43043 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D20FDC11C19E4E200E43043 /* Slots-Game */;
+			targetProxy = 3D20FDDC1C19E4E200E43043 /* PBXContainerItemProxy */;
+		};
+		3D20FDE81C19E4E200E43043 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D20FDC11C19E4E200E43043 /* Slots-Game */;
+			targetProxy = 3D20FDE71C19E4E200E43043 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D20FDCE1C19E4E200E43043 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D20FDCF1C19E4E200E43043 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D20FDD31C19E4E200E43043 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D20FDD41C19E4E200E43043 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D20FDED1C19E4E200E43043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D20FDEE1C19E4E200E43043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D20FDF01C19E4E200E43043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Slots-Game/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AMY.Slots-Game";
+				PRODUCT_NAME = "Spin the Fruit!";
+			};
+			name = Debug;
+		};
+		3D20FDF11C19E4E200E43043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Slots-Game/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AMY.Slots-Game";
+				PRODUCT_NAME = "Spin the Fruit!";
+			};
+			name = Release;
+		};
+		3D20FDF31C19E4E200E43043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Slots-GameTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AMY.Slots-GameTests";
+				PRODUCT_NAME = "Spin the Fruit!";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Slots-Game.app/Slots-Game";
+			};
+			name = Debug;
+		};
+		3D20FDF41C19E4E200E43043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Slots-GameTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AMY.Slots-GameTests";
+				PRODUCT_NAME = "Spin the Fruit!";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Slots-Game.app/Slots-Game";
+			};
+			name = Release;
+		};
+		3D20FDF61C19E4E200E43043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Slots-GameUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AMY.Slots-GameUITests";
+				PRODUCT_NAME = "Spin the Fruit!";
+				TEST_TARGET_NAME = "Slots-Game";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		3D20FDF71C19E4E200E43043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Slots-GameUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AMY.Slots-GameUITests";
+				PRODUCT_NAME = "Spin the Fruit!";
+				TEST_TARGET_NAME = "Slots-Game";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D20FDBD1C19E4E200E43043 /* Build configuration list for PBXProject "Spin the Fruit!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D20FDED1C19E4E200E43043 /* Debug */,
+				3D20FDEE1C19E4E200E43043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D20FDEF1C19E4E200E43043 /* Build configuration list for PBXNativeTarget "Slots-Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D20FDF01C19E4E200E43043 /* Debug */,
+				3D20FDF11C19E4E200E43043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D20FDF21C19E4E200E43043 /* Build configuration list for PBXNativeTarget "Slots-GameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D20FDF31C19E4E200E43043 /* Debug */,
+				3D20FDF41C19E4E200E43043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D20FDF51C19E4E200E43043 /* Build configuration list for PBXNativeTarget "Slots-GameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D20FDF61C19E4E200E43043 /* Debug */,
+				3D20FDF71C19E4E200E43043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D20FDBA1C19E4E200E43043 /* Project object */;
+}

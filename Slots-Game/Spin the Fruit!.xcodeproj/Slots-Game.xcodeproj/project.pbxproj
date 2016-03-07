@@ -217,7 +217,7 @@
 				TargetAttributes = {
 					3D20FDC11C19E4E200E43043 = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = SYR2PUL4D4;
+						DevelopmentTeam = 356QF5S3U7;
 					};
 					3D20FDDA1C19E4E200E43043 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -231,7 +231,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3D20FDBD1C19E4E200E43043 /* Build configuration list for PBXProject "Slots-Game" */;
+			buildConfigurationList = 3D20FDBD1C19E4E200E43043 /* Build configuration list for PBXProject "Spin the Fruit!" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -428,9 +428,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Slots-Game/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "AMY.Slots-Game";
+				PRODUCT_BUNDLE_IDENTIFIER = com.amyjoscelyn.spinthefruit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -439,9 +440,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Slots-Game/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "AMY.Slots-Game";
+				PRODUCT_BUNDLE_IDENTIFIER = com.amyjoscelyn.spinthefruit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -497,7 +499,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3D20FDBD1C19E4E200E43043 /* Build configuration list for PBXProject "Slots-Game" */ = {
+		3D20FDBD1C19E4E200E43043 /* Build configuration list for PBXProject "Spin the Fruit!" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3D20FDED1C19E4E200E43043 /* Debug */,

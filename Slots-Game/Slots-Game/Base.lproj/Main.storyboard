@@ -20,29 +20,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Qhn-Rw-aC2" userLabel="Labels Stack View">
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Qhn-Rw-aC2" userLabel="Labels Stack View">
                                 <rect key="frame" x="0.0" y="72" width="600" height="270"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's Play Some Slots!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZp-Io-4qa">
-                                        <rect key="frame" x="147" y="0.0" width="306.5" height="46"/>
+                                        <rect key="frame" x="147" y="0.0" width="307" height="46"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                         <color key="textColor" red="0.88235294119999996" green="0.37254901959999998" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 Tickets/Spin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xn6-FZ-Fd7">
-                                        <rect key="frame" x="242" y="56" width="115.5" height="46"/>
+                                        <rect key="frame" x="243" y="56" width="116" height="46"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" red="0.090196078430000007" green="0.2666666667" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hold a Column for 10 tickets!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wy8-Ru-rBb">
-                                        <rect key="frame" x="183" y="112" width="233" height="46"/>
+                                        <rect key="frame" x="184" y="112" width="233" height="46"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" red="0.090196078430000007" green="0.2666666667" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Tickets: %lu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lU6-BV-TRq">
-                                        <rect key="frame" x="231" y="168" width="137.5" height="46"/>
+                                        <rect key="frame" x="232" y="168" width="138" height="46"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" red="0.090196078430000007" green="0.2666666667" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -335,31 +335,31 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3Z1-MQ-Z89">
                                 <rect key="frame" x="0.0" y="36" width="600" height="528"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Man-Rv-HhV">
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Man-Rv-HhV">
                                         <rect key="frame" x="140" y="0.0" width="320" height="246"/>
                                         <subviews>
-                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9rl-gc-yhO">
+                                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9rl-gc-yhO">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
                                             </pickerView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="pxR-mq-9T3">
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="pxR-mq-9T3">
                                                 <rect key="frame" x="0.0" y="216" width="320" height="30"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1k-0k-72x">
-                                                        <rect key="frame" x="0.0" y="0.0" width="106.5" height="30"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="107" height="30"/>
                                                         <state key="normal" title="⚪️"/>
                                                         <connections>
                                                             <action selector="componentOneButtonTapped:" destination="wTF-g0-3JX" eventType="touchUpInside" id="vTx-E9-kwr"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKR-8w-jgD">
-                                                        <rect key="frame" x="106" y="0.0" width="107" height="30"/>
+                                                        <rect key="frame" x="107" y="0.0" width="107" height="30"/>
                                                         <state key="normal" title="⚪️"/>
                                                         <connections>
                                                             <action selector="componentTwoButtonTapped:" destination="wTF-g0-3JX" eventType="touchUpInside" id="nhP-bY-naC"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHf-7S-Piw">
-                                                        <rect key="frame" x="213" y="0.0" width="106.5" height="30"/>
+                                                        <rect key="frame" x="214" y="0.0" width="107" height="30"/>
                                                         <state key="normal" title="⚪️"/>
                                                         <connections>
                                                             <action selector="componentThreeButtonTapped:" destination="wTF-g0-3JX" eventType="touchUpInside" id="gQD-cV-yVh"/>
@@ -369,8 +369,8 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nx-YV-KDl">
-                                        <rect key="frame" x="195" y="254" width="210" height="65"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nx-YV-KDl">
+                                        <rect key="frame" x="195" y="255" width="210" height="65"/>
                                         <color key="backgroundColor" red="0.97254901959999995" green="0.78823529410000004" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                         <state key="normal" title="SPIN">
@@ -384,29 +384,29 @@
                                             <action selector="spin:" destination="wTF-g0-3JX" eventType="touchUpInside" id="HuZ-e7-UaR"/>
                                         </connections>
                                     </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="WUg-Bj-8PB">
-                                        <rect key="frame" x="195" y="328.5" width="210" height="134"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="WUg-Bj-8PB">
+                                        <rect key="frame" x="195" y="328" width="210" height="134"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Tickets: %li" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIq-F3-SBG">
-                                                <rect key="frame" x="0.0" y="0.0" width="210" height="21.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="210" height="22"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <color key="textColor" red="0.090196078430000007" green="0.2666666667" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Winnings: %li" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZr-2s-ngz">
-                                                <rect key="frame" x="0.0" y="37" width="210" height="21.5"/>
+                                                <rect key="frame" x="0.0" y="38" width="210" height="22"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <color key="textColor" red="0.090196078430000007" green="0.2666666667" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Two in a Row!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AyJ-z8-yc6">
-                                                <rect key="frame" x="0.0" y="75" width="210" height="21.5"/>
+                                                <rect key="frame" x="0.0" y="75" width="210" height="22"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Won %lu Tickets!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XbW-Ha-ThW">
-                                                <rect key="frame" x="0.0" y="112" width="210" height="21.5"/>
+                                                <rect key="frame" x="0.0" y="113" width="210" height="22"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -415,7 +415,7 @@
                                         <color key="backgroundColor" red="0.047058823530000002" green="0.37647058820000001" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9r-YX-YVN">
-                                        <rect key="frame" x="195" y="471" width="210" height="57"/>
+                                        <rect key="frame" x="195" y="471" width="210" height="58"/>
                                         <color key="backgroundColor" red="0.88235294119999996" green="0.37254901959999998" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                         <state key="normal" title="       CASH OUT       ">
@@ -600,7 +600,7 @@
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxF-XX-SeX">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxF-XX-SeX">
                                                         <rect key="frame" x="132" y="0.0" width="132" height="30"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                         <color key="textColor" red="0.88235294119999996" green="0.37254901959999998" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
