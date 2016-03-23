@@ -322,34 +322,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3Z1-MQ-Z89">
-                                <rect key="frame" x="28" y="28" width="320" height="470"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3Z1-MQ-Z89">
+                                <rect key="frame" x="28" y="28" width="544" height="564"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Man-Rv-HhV">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="246"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Man-Rv-HhV">
+                                        <rect key="frame" x="41" y="0.0" width="462" height="271"/>
                                         <subviews>
-                                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9rl-gc-yhO">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9rl-gc-yhO">
+                                                <rect key="frame" x="0.0" y="0.0" width="462" height="241"/>
                                             </pickerView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="pxR-mq-9T3">
-                                                <rect key="frame" x="0.0" y="216" width="320" height="30"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="pxR-mq-9T3">
+                                                <rect key="frame" x="0.0" y="241" width="462" height="30"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1k-0k-72x">
-                                                        <rect key="frame" x="0.0" y="0.0" width="107" height="30"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1k-0k-72x">
+                                                        <rect key="frame" x="0.0" y="0.0" width="154" height="30"/>
                                                         <state key="normal" title="⚪️"/>
                                                         <connections>
                                                             <action selector="componentOneButtonTapped:" destination="wTF-g0-3JX" eventType="touchUpInside" id="vTx-E9-kwr"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKR-8w-jgD">
-                                                        <rect key="frame" x="107" y="0.0" width="107" height="30"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKR-8w-jgD">
+                                                        <rect key="frame" x="154" y="0.0" width="154" height="30"/>
                                                         <state key="normal" title="⚪️"/>
                                                         <connections>
                                                             <action selector="componentTwoButtonTapped:" destination="wTF-g0-3JX" eventType="touchUpInside" id="nhP-bY-naC"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHf-7S-Piw">
-                                                        <rect key="frame" x="214" y="0.0" width="107" height="30"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHf-7S-Piw">
+                                                        <rect key="frame" x="308" y="0.0" width="154" height="30"/>
                                                         <state key="normal" title="⚪️"/>
                                                         <connections>
                                                             <action selector="componentThreeButtonTapped:" destination="wTF-g0-3JX" eventType="touchUpInside" id="gQD-cV-yVh"/>
@@ -359,70 +359,95 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nx-YV-KDl">
-                                        <rect key="frame" x="126" y="246" width="68" height="48"/>
-                                        <color key="backgroundColor" red="0.97254901959999995" green="0.78823529410000004" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
-                                        <state key="normal" title="SPIN">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="6"/>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="spin:" destination="wTF-g0-3JX" eventType="touchUpInside" id="HuZ-e7-UaR"/>
-                                        </connections>
-                                    </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="WUg-Bj-8PB">
-                                        <rect key="frame" x="74" y="294" width="172" height="134"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="oat-e4-Fnd">
+                                        <rect key="frame" x="41" y="293" width="462" height="271"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Your Tickets: %li" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIq-F3-SBG">
-                                                <rect key="frame" x="0.0" y="0.0" width="172" height="22"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                <color key="textColor" red="0.090196078430000007" green="0.2666666667" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Your Winnings: %li" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZr-2s-ngz">
-                                                <rect key="frame" x="0.0" y="38" width="172" height="22"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                <color key="textColor" red="0.090196078430000007" green="0.2666666667" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Two in a Row!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AyJ-z8-yc6">
-                                                <rect key="frame" x="0.0" y="75" width="172" height="22"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="You Won %lu Tickets!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XbW-Ha-ThW">
-                                                <rect key="frame" x="0.0" y="113" width="172" height="22"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nx-YV-KDl">
+                                                <rect key="frame" x="126" y="0.0" width="210" height="54"/>
+                                                <color key="backgroundColor" red="0.97254901959999995" green="0.78823529410000004" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                                <state key="normal" title="SPIN">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="6"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="spin:" destination="wTF-g0-3JX" eventType="touchUpInside" id="HuZ-e7-UaR"/>
+                                                </connections>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="WUg-Bj-8PB">
+                                                <rect key="frame" x="145" y="62" width="172" height="147"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Tickets: %li" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIq-F3-SBG">
+                                                        <rect key="frame" x="0.0" y="0.0" width="172" height="21.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <color key="textColor" red="0.090196078430000007" green="0.2666666667" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Winnings: %li" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZr-2s-ngz">
+                                                        <rect key="frame" x="0.0" y="42" width="172" height="21.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <color key="textColor" red="0.090196078430000007" green="0.2666666667" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Two in a Row!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AyJ-z8-yc6">
+                                                        <rect key="frame" x="0.0" y="83" width="172" height="21.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Won %lu Tickets!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XbW-Ha-ThW">
+                                                        <rect key="frame" x="0.0" y="125" width="172" height="21.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.047058823530000002" green="0.37647058820000001" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9r-YX-YVN" userLabel="CASH OUT">
+                                                <rect key="frame" x="126" y="217" width="210" height="54"/>
+                                                <color key="backgroundColor" red="0.88235294119999996" green="0.37254901959999998" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                                <state key="normal" title="       CASH OUT       ">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="6"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="cashOutButtonTapped:" destination="wTF-g0-3JX" eventType="touchUpInside" id="aTf-tX-Pbd"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.047058823530000002" green="0.37647058820000001" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="n9r-YX-YVN" firstAttribute="centerX" secondItem="1nx-YV-KDl" secondAttribute="centerX" id="Doi-PT-jmZ"/>
+                                            <constraint firstItem="n9r-YX-YVN" firstAttribute="top" secondItem="WUg-Bj-8PB" secondAttribute="bottom" constant="8" id="OqH-y0-DCC"/>
+                                            <constraint firstItem="n9r-YX-YVN" firstAttribute="width" secondItem="1nx-YV-KDl" secondAttribute="width" id="WVq-Jx-Sge"/>
+                                            <constraint firstItem="n9r-YX-YVN" firstAttribute="height" secondItem="1nx-YV-KDl" secondAttribute="height" id="drE-Kw-Fd7"/>
+                                            <constraint firstItem="WUg-Bj-8PB" firstAttribute="top" secondItem="1nx-YV-KDl" secondAttribute="bottom" constant="8" id="wdn-cr-BUx"/>
+                                        </constraints>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9r-YX-YVN" userLabel="CASH OUT">
-                                        <rect key="frame" x="55" y="428" width="210" height="42"/>
-                                        <color key="backgroundColor" red="0.88235294119999996" green="0.37254901959999998" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
-                                        <state key="normal" title="       CASH OUT       ">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="6"/>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="cashOutButtonTapped:" destination="wTF-g0-3JX" eventType="touchUpInside" id="aTf-tX-Pbd"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="Man-Rv-HhV" firstAttribute="centerX" secondItem="3Z1-MQ-Z89" secondAttribute="centerX" id="EAt-b6-jym"/>
+                                    <constraint firstItem="oat-e4-Fnd" firstAttribute="centerX" secondItem="Man-Rv-HhV" secondAttribute="centerX" id="Hi6-Nl-ZE2"/>
+                                    <constraint firstItem="oat-e4-Fnd" firstAttribute="height" secondItem="Man-Rv-HhV" secondAttribute="height" id="IvN-6A-qrQ"/>
+                                    <constraint firstItem="Man-Rv-HhV" firstAttribute="top" secondItem="3Z1-MQ-Z89" secondAttribute="top" id="Kmf-l4-Y73"/>
+                                    <constraint firstAttribute="bottom" secondItem="oat-e4-Fnd" secondAttribute="bottom" id="RyB-Kk-yU2"/>
+                                    <constraint firstItem="oat-e4-Fnd" firstAttribute="width" secondItem="Man-Rv-HhV" secondAttribute="width" id="hzf-UG-2N4"/>
+                                    <constraint firstItem="Man-Rv-HhV" firstAttribute="height" secondItem="3Z1-MQ-Z89" secondAttribute="height" multiplier="0.48" id="rCt-CD-BX9"/>
+                                    <constraint firstItem="Man-Rv-HhV" firstAttribute="width" secondItem="3Z1-MQ-Z89" secondAttribute="width" multiplier="0.85" id="vF1-Ek-tOv"/>
+                                </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIH-QH-kXl">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIH-QH-kXl">
                                 <rect key="frame" x="518" y="528" width="54" height="54"/>
                                 <color key="backgroundColor" red="0.97254901959999995" green="0.78823529410000004" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="FIH-QH-kXl" secondAttribute="height" multiplier="1:1" id="P0n-LM-IqV"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="🍒"/>
                                 <userDefinedRuntimeAttributes>
@@ -434,6 +459,15 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="3Z1-MQ-Z89" secondAttribute="trailing" constant="8" id="2Ox-qY-VvQ"/>
+                            <constraint firstItem="3Z1-MQ-Z89" firstAttribute="leading" secondItem="J5J-Dj-6UV" secondAttribute="leadingMargin" constant="8" id="Cq2-XX-Bmu"/>
+                            <constraint firstItem="FIH-QH-kXl" firstAttribute="height" secondItem="n9r-YX-YVN" secondAttribute="height" id="DKG-SG-qf0"/>
+                            <constraint firstItem="NiQ-sm-nz5" firstAttribute="top" secondItem="3Z1-MQ-Z89" secondAttribute="bottom" constant="8" id="Tlh-Cz-KPv"/>
+                            <constraint firstItem="3Z1-MQ-Z89" firstAttribute="top" secondItem="dOK-SM-647" secondAttribute="bottom" constant="8" id="kJh-PA-LxR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FIH-QH-kXl" secondAttribute="trailing" constant="8" id="uvV-fG-aXG"/>
+                            <constraint firstItem="NiQ-sm-nz5" firstAttribute="top" secondItem="FIH-QH-kXl" secondAttribute="bottom" constant="18" id="zol-Qr-a6q"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mfM-02-6gC"/>
                     <connections>

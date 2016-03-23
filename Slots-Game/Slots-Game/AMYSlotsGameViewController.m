@@ -44,8 +44,8 @@
     self.fruitPicker.dataSource = self;
     self.fruitPicker.delegate = self;
     
-    self.notificationOneLabel.hidden = YES;
-    self.notificationTwoLabel.hidden = YES;
+    self.notificationOneLabel.text = @"";
+    self.notificationTwoLabel.text = @"";
     
     self.tickets = 100;
     self.currentTicketAmount.text = [NSString stringWithFormat:@"Your Tickets: %li", self.tickets];
