@@ -335,13 +335,13 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3Z1-MQ-Z89">
                                 <rect key="frame" x="0.0" y="36" width="600" height="528"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Man-Rv-HhV">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Man-Rv-HhV">
                                         <rect key="frame" x="140" y="0.0" width="320" height="246"/>
                                         <subviews>
-                                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9rl-gc-yhO">
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9rl-gc-yhO">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
                                             </pickerView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="pxR-mq-9T3">
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="pxR-mq-9T3">
                                                 <rect key="frame" x="0.0" y="216" width="320" height="30"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1k-0k-72x">
@@ -369,7 +369,7 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nx-YV-KDl">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nx-YV-KDl">
                                         <rect key="frame" x="195" y="255" width="210" height="65"/>
                                         <color key="backgroundColor" red="0.97254901959999995" green="0.78823529410000004" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
@@ -384,7 +384,7 @@
                                             <action selector="spin:" destination="wTF-g0-3JX" eventType="touchUpInside" id="HuZ-e7-UaR"/>
                                         </connections>
                                     </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="WUg-Bj-8PB">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="WUg-Bj-8PB">
                                         <rect key="frame" x="195" y="328" width="210" height="134"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Tickets: %li" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIq-F3-SBG">
@@ -414,8 +414,8 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.047058823530000002" green="0.37647058820000001" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9r-YX-YVN">
-                                        <rect key="frame" x="195" y="471" width="210" height="58"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9r-YX-YVN">
+                                        <rect key="frame" x="195" y="470" width="210" height="58"/>
                                         <color key="backgroundColor" red="0.88235294119999996" green="0.37254901959999998" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                         <state key="normal" title="       CASH OUT       ">
