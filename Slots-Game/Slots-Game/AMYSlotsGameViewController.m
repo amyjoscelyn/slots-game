@@ -408,4 +408,13 @@ numberOfRowsInComponent:(NSInteger)component
  Inspired by a lab from the Flatiron School.
  */
 
+/*
+ Potential prizes: 🦄🐴🐙🐠🐢🐡🐬🐲🦀🐔🐷🦁🐶🐱🐹🐰🐻🐨🐯🐼🐮🐥🐗🐺🐒🐌
+ Also: 🐚🌰🌷🌹🌻🌺🌼🌸💐🍄🎍🌳🌿🌲🍁☂️🍈
+ Hmm... I wonder if I can add new fruits to the wheel spin.  Like, for special prices, you can spin "special" wheels--like ones with a better chance of getting a diamond (and therefore a better payout), or ones that are like only made up of apples and eggplants, which means you have a very good chance of winning a middling payout.  Like, you can have ONE spin (if you pay 50 tickets) of getting a 50% chance of winning at least 50 tickets.  Or if you pay 1000 tickets, you get ONE spin of a wheel with a ton more clovers and diamonds, although the rest of them are all cherries or grapes, so you can either win 10,000 tickets as a result, or 5.  That might be fun.
+ Maybe too I can add different fruits.  Like, replace one of them with a melon, which is worth a special amount of tickets if won.  I don't know.  That might be kind of complicated though.
+ I still like the ticket voucher prize--you can display those as well, and it would be a badge of honor if you have like 300 and haven't needed to use any because you've been so fortunate with your winnings.  But you can turn those in for 100 more tickets, maybe.
+ Every prize on your shelf is worth some number of tickets.   They can be tiered.  So blowfish would be worth a lot less than tropical fish.  Cat a lot less than tiger.  Horse a whole lot less than unicorn (which should be the most expensive one in the game).  And each of those can be exchanged, just like the vouchers, for half the tickets they're worth.  That way if you blow through your voucher, you still have an opportunity to turn in your prize and get more tickets to play.
+ */
+
 @end
