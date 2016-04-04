@@ -176,14 +176,6 @@ numberOfRowsInComponent:(NSInteger)component
     NSString *title = @"";
     NSString *message = @"";
     
-    [self.componentOneButton setTitle:@"⚪️" forState:UIControlStateNormal];
-    [self.componentTwoButton setTitle:@"⚪️" forState:UIControlStateNormal];
-    [self.componentThreeButton setTitle:@"⚪️" forState:UIControlStateNormal];
-    
-    self.componentOneHeld = NO;
-    self.componentTwoHeld = NO;
-    self.componentThreeHeld = NO;
-    
     if (playerWinsALot)
     {
         NSUInteger winnings = [self playersWinningsWithFruitsInARow:3];
@@ -193,6 +185,8 @@ numberOfRowsInComponent:(NSInteger)component
         
         title = [NSString stringWithFormat:@"You've won %lu tickets!", winnings];
         message = @"Wanna play again?";
+        
+        [self unholdAllComponents:YES];
     }
     else if (playerWinsALittle)
     {
@@ -203,6 +197,8 @@ numberOfRowsInComponent:(NSInteger)component
         
         title = [NSString stringWithFormat:@"You've won %lu tickets!", winnings];
         message = @"Wanna play again?";
+        
+        [self unholdAllComponents:NO];
     }
     else
     {
@@ -215,6 +211,19 @@ numberOfRowsInComponent:(NSInteger)component
     self.notificationTwoLabel.text = message;
     
     [self showHiddenNotifcationLabels];
+}
+
+- (void)unholdAllComponents:(BOOL)clearAllComponents
+{
+    [self.componentOneButton setTitle:@"⚪️" forState:UIControlStateNormal];
+    [self.componentTwoButton setTitle:@"⚪️" forState:UIControlStateNormal];
+    if (clearAllComponents)
+    {
+        [self.componentThreeButton setTitle:@"⚪️" forState:UIControlStateNormal];
+        self.componentThreeHeld = NO;
+    }
+    self.componentOneHeld = NO;
+    self.componentTwoHeld = NO;
 }
 
 - (BOOL)playerHasWonThreeInARow
