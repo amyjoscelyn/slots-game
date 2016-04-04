@@ -40,6 +40,18 @@
     [super viewDidLoad];
     
     self.fruitsArray = @[@"🍎", @"🍊", @"🍌", @"🍉", @"🍒", @"🍇", @"🍒", @"💎", @"🍇", @"🍉", @"🍒", @"🍆", @"🍎", @"🍊", @"🍌", @"🍀", @"🍇", @"🍒", @"🍎", @"🍉", @"🍌", @"🍇", @"🍆", @"🍎", @"🍊", @"🍇", @"🍉", @"🍌", @"🍒", @"🍇", @"🍒", @"🍌", @"🍉", @"🍆", @"🍀", @"🍊", @"🍇", @"🍌", @"🍉", @"🍇", @"🍒", @"🍎", @"🍉", @"🍌", @"🍆", @"🍒", @"🍊", @"🍇", @"🍒", @"🍌", @"🍎", @"🍒"];
+    //I should probably double the amount of fruits in the array here... maybe even triple them?  Chances of winning right now are pretty great. I won nearly 15000 with only a little bit of thought and about one minute of time
+    
+    //💎 1  1
+    //🍀 2  2
+    //🍆 4  4
+    //🍊 5  6
+    //🍎 6  8
+    //🍉 7  11
+    //🍌 8  14
+    //🍇 9  18
+    //🍒 10 22 ?????? how would this affect the chances of winning??? I feel like more would only mean you'd win more.  That might be faulty logic.  It might also be a distant goal to have the wheel spin longer (and to add sound).  Casinos make their slot machines with a lot more unique symbols, don't they?  That's how their winning chances stay low.  I don't have room in my rules grid to add more fruits.
+    //I miiiiight be able to slow down the animation--have it run at half speed, or something.  I'll look into that sometime.
     
     self.fruitPicker.dataSource = self;
     self.fruitPicker.delegate = self;
