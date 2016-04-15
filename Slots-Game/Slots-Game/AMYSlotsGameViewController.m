@@ -52,6 +52,7 @@
     //🍇 9  18
     //🍒 10 22 ?????? how would this affect the chances of winning??? I feel like more would only mean you'd win more.  That might be faulty logic.  It might also be a distant goal to have the wheel spin longer (and to add sound).  Casinos make their slot machines with a lot more unique symbols, don't they?  That's how their winning chances stay low.  I don't have room in my rules grid to add more fruits.
     //I miiiiight be able to slow down the animation--have it run at half speed, or something.  I'll look into that sometime.
+    //This should be the next build kind of feature.  The amounts of tickets don't really matter until I have some way to persist them, and to use them on something else.
     
     self.fruitPicker.dataSource = self;
     self.fruitPicker.delegate = self;
@@ -131,7 +132,7 @@ numberOfRowsInComponent:(NSInteger)component
         self.notificationOneLabel.text = @"Sorry";
         self.notificationTwoLabel.text = @"Not enough tickets.";
         
-        [self showHiddenNotifcationLabels];
+        [self showHiddenNotificationLabels];
     }
 }
 
@@ -148,16 +149,21 @@ numberOfRowsInComponent:(NSInteger)component
     }
 }
 
-- (void)showHiddenNotifcationLabels
+- (void)showHiddenNotificationLabels
 {
     self.notificationOneLabel.hidden = NO;
     self.notificationTwoLabel.hidden = NO;
 }
 
-- (void)spinTheFruits
+- (void)hideNotificationLabels
 {
     self.notificationOneLabel.hidden = YES;
-    self.notificationTwoLabel.hidden = YES; //make this into separate method?
+    self.notificationTwoLabel.hidden = YES;
+}
+
+- (void)spinTheFruits
+{
+    [self hideNotificationLabels];
     
     NSUInteger randomRow = 0;
     NSUInteger amountOfFruits = self.fruitsArray.count;
@@ -185,30 +191,19 @@ numberOfRowsInComponent:(NSInteger)component
     BOOL playerWinsALot = [self playerHasWonThreeInARow];
     BOOL playerWinsALittle = [self playerHasWonTwoInARow];
     
-    NSString *title = @"";
-    NSString *message = @"";
-    
     if (playerWinsALot)
     {
         NSUInteger winnings = [self playersWinningsWithFruitsInARow:3];
-        self.amountOfTicketsWon += winnings;
-        self.tickets += winnings;
-        self.justWon = YES;
         
-        title = [NSString stringWithFormat:@"You've won %lu tickets!", winnings];
-        message = @"Wanna play again?";
+        [self populateViewWithWinnings:winnings];
         
         [self unholdAllComponents:YES];
     }
     else if (playerWinsALittle)
     {
         NSUInteger winnings = [self playersWinningsWithFruitsInARow:2];
-        self.amountOfTicketsWon += winnings;
-        self.tickets += winnings;
-        self.justWon = YES;
         
-        title = [NSString stringWithFormat:@"You've won %lu tickets!", winnings];
-        message = @"Wanna play again?";
+        [self populateViewWithWinnings:winnings];
         
         [self unholdAllComponents:NO];
     }
@@ -219,10 +214,23 @@ numberOfRowsInComponent:(NSInteger)component
     self.totalTicketWinnings.text = [NSString stringWithFormat:@"Total Tickets Won: %li", self.amountOfTicketsWon];
     self.currentTicketAmount.text = [NSString stringWithFormat:@"Your Tickets: %li", self.tickets];
     
+    [self showHiddenNotificationLabels];
+}
+
+- (void)populateViewWithWinnings:(NSUInteger)winnings
+{
+    NSString *title = @"";
+    NSString *message = @"";
+    
+    self.amountOfTicketsWon += winnings;
+    self.tickets += winnings;
+    self.justWon = YES;
+    
+    title = [NSString stringWithFormat:@"You've won %lu tickets!", winnings];
+    message = @"Wanna play again?";
+    
     self.notificationOneLabel.text = title;
     self.notificationTwoLabel.text = message;
-    
-    [self showHiddenNotifcationLabels];
 }
 
 - (void)unholdAllComponents:(BOOL)clearAllComponents
@@ -408,7 +416,7 @@ numberOfRowsInComponent:(NSInteger)component
     self.notificationOneLabel.text = @"You can't hold slots";
     self.notificationTwoLabel.text = @"when you've just won.";
     
-    [self showHiddenNotifcationLabels];
+    [self showHiddenNotificationLabels];
 }
 
 - (IBAction)cashOutButtonTapped:(id)sender
