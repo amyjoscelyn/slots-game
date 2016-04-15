@@ -249,6 +249,7 @@ numberOfRowsInComponent:(NSInteger)component
     }
     self.componentOneHeld = NO;
     self.componentTwoHeld = NO;
+    //sometimes when you try to manually unhold a column, it triggers but doesn't change state until you tap it again.  wonder why?
 }
 
 - (BOOL)playerHasWonThreeInARow
@@ -419,6 +420,11 @@ numberOfRowsInComponent:(NSInteger)component
 /*
  Potential prizes: 🦄🐴🐙🐠🐢🐡🐬🐲🦀🐔🐷🦁🐶🐱🐹🐰🐻🐨🐯🐼🐮🐥🐗🐺🐒🐌
  Also: 🐚🌰🌷🌹🌻🌺🌼🌸💐🍄🎍🌳🌿🌲🍁☂️🍈
+ Also? 👹👺💀👽🤖(masks) 👒🎩👑 (hats) 🎒💍🕶👓🌂 (accessories) 🏆🏅 (trophes) 🎨🖌🎮🎲🃏🔮⚗📜🗺🛎🔦🔖 (activities and toys, like a deck of cards) 💰💎🔑🗝🛍 (stuff?) 🎁 (surprise?) 🎊🎉 (congratulations!) 🎭🎐🎈🎀🛡 (decorations)  💝 (box of chocolates)
+ cheap: 🔖🎈🗺🎀
+ moderate: 🛎👓
+ expensive: 💍🕶
+ most sought after: 👑💰💎🛡
  Hmm... I wonder if I can add new fruits to the wheel spin.  Like, for special prices, you can spin "special" wheels--like ones with a better chance of getting a diamond (and therefore a better payout), or ones that are like only made up of apples and eggplants, which means you have a very good chance of winning a middling payout.  Like, you can have ONE spin (if you pay 50 tickets) of getting a 50% chance of winning at least 50 tickets.  Or if you pay 1000 tickets, you get ONE spin of a wheel with a ton more clovers and diamonds, although the rest of them are all cherries or grapes, so you can either win 10,000 tickets as a result, or 5.  That might be fun.
  Maybe too I can add different fruits.  Like, replace one of them with a melon, which is worth a special amount of tickets if won.  I don't know.  That might be kind of complicated though.
  I still like the ticket voucher prize--you can display those as well, and it would be a badge of honor if you have like 300 and haven't needed to use any because you've been so fortunate with your winnings.  But you can turn those in for 100 more tickets, maybe.
