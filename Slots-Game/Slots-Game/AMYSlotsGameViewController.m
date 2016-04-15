@@ -157,6 +157,7 @@ numberOfRowsInComponent:(NSInteger)component
 
 - (void)hideNotificationLabels
 {
+//    NSLog(@"notification labels hidden");
     self.notificationOneLabel.hidden = YES;
     self.notificationTwoLabel.hidden = YES;
 }
@@ -210,6 +211,9 @@ numberOfRowsInComponent:(NSInteger)component
     else
     {
         self.justWon = NO;
+        
+        self.notificationOneLabel.text = @"";
+        self.notificationTwoLabel.text = @"";
     }
     self.totalTicketWinnings.text = [NSString stringWithFormat:@"Total Tickets Won: %li", self.amountOfTicketsWon];
     self.currentTicketAmount.text = [NSString stringWithFormat:@"Your Tickets: %li", self.tickets];
@@ -237,6 +241,7 @@ numberOfRowsInComponent:(NSInteger)component
 {
     [self.componentOneButton setTitle:@"⚪️" forState:UIControlStateNormal];
     [self.componentTwoButton setTitle:@"⚪️" forState:UIControlStateNormal];
+    
     if (clearAllComponents)
     {
         [self.componentThreeButton setTitle:@"⚪️" forState:UIControlStateNormal];
@@ -270,83 +275,57 @@ numberOfRowsInComponent:(NSInteger)component
     
     if (amountOfFruitsInARow == 3)
     {
-        if ([self.fruitsArray[rowOne] isEqualToString:@"🍒"])
-        {
-            winnings = 50;
-        }
-        else if ([self.fruitsArray[rowOne] isEqualToString:@"🍇"])
-        {
-            winnings = 100;
-        }
-        else if ([self.fruitsArray[rowOne] isEqualToString:@"🍌"])
-        {
-            winnings = 250;
-        }
-        else if ([self.fruitsArray[rowOne] isEqualToString:@"🍉"])
-        {
-            winnings = 500;
-        }
-        else if ([self.fruitsArray[rowOne] isEqualToString:@"🍎"])
-        {
-            winnings = 750;
-        }
-        else if ([self.fruitsArray[rowOne] isEqualToString:@"🍊"])
-        {
-            winnings = 1000;
-        }
-        else if ([self.fruitsArray[rowOne] isEqualToString:@"🍆"])
-        {
-            winnings = 1500;
-        }
-        else if ([self.fruitsArray[rowOne] isEqualToString:@"🍀"])
-        {
-            winnings = 5000;
-        }
-        else if ([self.fruitsArray[rowOne] isEqualToString:@"💎"])
-        {
-            winnings = 10000;
-        }
+        winnings = [self winningsFromMatchedFruit:rowOne];
+        winnings *= 10;
     }
     else if (amountOfFruitsInARow == 2)
     {
-        if ([self.fruitsArray[rowOne] isEqualToString:@"🍒"])
-        {
-            winnings = 5;
-        }
-        else if ([self.fruitsArray[rowOne] isEqualToString:@"🍇"])
-        {
-            winnings = 10;
-        }
-        else if ([self.fruitsArray[rowOne] isEqualToString:@"🍌"])
-        {
-            winnings = 25;
-        }
-        else if ([self.fruitsArray[rowOne] isEqualToString:@"🍉"])
-        {
-            winnings = 50;
-        }
-        else if ([self.fruitsArray[rowOne] isEqualToString:@"🍎"])
-        {
-            winnings = 75;
-        }
-        else if ([self.fruitsArray[rowOne] isEqualToString:@"🍊"])
-        {
-            winnings = 100;
-        }
-        else if ([self.fruitsArray[rowOne] isEqualToString:@"🍆"])
-        {
-            winnings = 150;
-        }
-        else if ([self.fruitsArray[rowOne] isEqualToString:@"🍀"])
-        {
-            winnings = 500;
-        }
-        else if ([self.fruitsArray[rowOne] isEqualToString:@"💎"])
-        {
-            winnings = 1000;
-        }
-        
+        winnings = [self winningsFromMatchedFruit:rowOne];
     }
+    return winnings;
+}
+
+- (NSUInteger)winningsFromMatchedFruit:(NSUInteger)rowOne
+{
+    NSUInteger winnings;
+    
+    if ([self.fruitsArray[rowOne] isEqualToString:@"🍒"])
+    {
+        winnings = 5;
+    }
+    else if ([self.fruitsArray[rowOne] isEqualToString:@"🍇"])
+    {
+        winnings = 10;
+    }
+    else if ([self.fruitsArray[rowOne] isEqualToString:@"🍌"])
+    {
+        winnings = 25;
+    }
+    else if ([self.fruitsArray[rowOne] isEqualToString:@"🍉"])
+    {
+        winnings = 50;
+    }
+    else if ([self.fruitsArray[rowOne] isEqualToString:@"🍎"])
+    {
+        winnings = 75;
+    }
+    else if ([self.fruitsArray[rowOne] isEqualToString:@"🍊"])
+    {
+        winnings = 100;
+    }
+    else if ([self.fruitsArray[rowOne] isEqualToString:@"🍆"])
+    {
+        winnings = 150;
+    }
+    else if ([self.fruitsArray[rowOne] isEqualToString:@"🍀"])
+    {
+        winnings = 500;
+    }
+    else if ([self.fruitsArray[rowOne] isEqualToString:@"💎"])
+    {
+        winnings = 1000;
+    }
+    
     return winnings;
 }
 
